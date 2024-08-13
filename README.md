@@ -8,6 +8,10 @@ $ npm -v
 $ node -v
 v20.15.1
 -------------------
+Angular Material": 18.1.4,
+-------------------
+Bootstrap : 5.3.3
+-------------------
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.4.
 
