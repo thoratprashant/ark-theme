@@ -1,0 +1,19 @@
+.login--wrapper{
+    .card{
+        border: 1px solid transparent;
+        padding: 20px;
+        border-radius: 15px; 
+        background: rgba(0,0,0,0.5) !important;
+        .card-header{
+            color: #fff;
+        }
+    } 
+    ::ng-deep{
+        .mat-mdc-checkbox .mat-internal-form-field,
+        .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-floating-label,
+        .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-text-field__input {
+            color: #fff   !important; 
+        }
+        
+    }
+}

@@ -4,8 +4,8 @@ import { SharedModule } from './shared/shared.module';
 import { AppComponent } from './app.component'; 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'; 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';   
-import { LoginComponent } from './component/auth/login/login.component';
-// import { AppRoutingModule } from './app.routes';
+import { LoginComponent } from './component/auth/login/login.component'; 
+import { AppRoutingModule } from './app.routes';
 
 // export function HttpLoaderFactory(http: HttpClient) {
 //   return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
@@ -14,12 +14,11 @@ import { LoginComponent } from './component/auth/login/login.component';
 
 @NgModule({
   declarations: [
-    AppComponent, 
-    LoginComponent
+    AppComponent,  
   ],
   imports: [
     BrowserModule,
-    // AppRoutingModule,
+    AppRoutingModule,
     SharedModule, 
     FormsModule,
     ReactiveFormsModule, 

@@ -1,11 +1,12 @@
 import { Routes } from '@angular/router';
-import { LoginComponent } from './component/auth/login/login.component';
-
-export const routes: Routes = [
+import { AuthLayoutComponent } from './shared/layouts/auth-layout/auth-layout.component';
+ 
+export const routes: Routes = [ 
     {
         path: '',
-        component: LoginComponent
-    },
+        component: AuthLayoutComponent,
+        loadChildren: () => import('./component/auth/auth.module').then(mod => mod.AuthModule),  
+    }
 ];
 
 

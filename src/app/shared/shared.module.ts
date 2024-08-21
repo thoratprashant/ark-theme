@@ -3,11 +3,13 @@ import { MaterialModule } from "./material.module";
 import { CommonModule } from "@angular/common";
 import { SharedRoutingModule } from "./shared-routing.module";
 import { NgModule } from "@angular/core";
+import { AuthLayoutComponent } from "./layouts/auth-layout/auth-layout.component";
 
   
 
 @NgModule({
   declarations: [ 
+    AuthLayoutComponent
   ],
   imports: [
     CommonModule,
@@ -21,6 +23,7 @@ import { NgModule } from "@angular/core";
     FormsModule,
     ReactiveFormsModule,     
     MaterialModule, 
+    AuthLayoutComponent
   ]
 })
 
